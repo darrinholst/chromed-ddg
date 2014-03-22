@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Chromed DuckDuckGo",
+  "version": "1.0",
+  "description": "My tweaks to duckduckgo.com",
+  "permissions": [
+    "https://duckduckgo.com/"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["https://*.duckduckgo.com/*"],
+      "js": [
+        "javascripts/jquery.js",
+        "javascripts/jquery.hotkeys.js",
+        "javascripts/chromed.js"
+      ]
+    }
+  ]
+}
+
+
